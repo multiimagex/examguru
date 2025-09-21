@@ -125,6 +125,10 @@ section {
     padding: 6rem 1rem;
 }
 
+section h2, section h3 {
+    cursor: pointer;
+}
+
 section h2 {
     font-size: 2.5rem;
     font-weight: 700;
@@ -136,52 +140,51 @@ section p {
     margin-bottom: 3rem;
 }
 
-.featured-section {
+.featured-section, .accordion-content {
     display: grid;
     grid-template-columns: 1fr;
-    gap: 2rem;
+    gap: 1.5rem;
     max-width: 1200px;
     margin: 0 auto;
 }
 
 @media(min-width:768px){
-    .featured-section {
+    .featured-section, .accordion-content {
         grid-template-columns: repeat(3,1fr);
     }
 }
 
-.card {
+.card, .accordion-content a {
     background-color: white;
-    padding: 2rem;
+    padding: 1.5rem;
     border-radius: 1rem;
     box-shadow: 0 4px 12px rgba(0,0,0,0.05);
     transition: all 0.3s ease-in-out;
 }
 
-.card:hover {
+.card:hover, .accordion-content a:hover {
     transform: translateY(-5px);
     box-shadow: 0 8px 20px rgba(0,0,0,0.1);
 }
 
-.card h3 {
-    font-size: 1.5rem;
-    font-weight: 700;
-    margin-bottom: 1rem;
-}
-
-.card p {
-    font-size: 1rem;
-    color: #4b5563;
-    margin-bottom: 1rem;
-}
-
-.card a {
-    color: #2563eb;
+.card h3, .accordion-content a {
+    font-size: 1.25rem;
     font-weight: 600;
-    text-decoration: none;
 }
 
-.card a:hover {
+.accordion-content {
+    margin-top: 0.5rem;
+    padding-left: 1rem;
+}
+
+.accordion-content a {
+    display: block;
+    padding: 0.5rem 0;
+    text-decoration: none;
+    color: #2563eb;
+}
+
+.accordion-content a:hover {
     text-decoration: underline;
 }
 
