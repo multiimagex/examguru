@@ -1,149 +1,165 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ExamGuru - Class 6-12 Notes & Exam Papers</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ExamGuru - Class 6-12 Notes & Exam Papers</title>
 
-    <!-- SEO Meta Tags -->
-    <meta name="description" content="ExamGuru provides Class 6-12 notes, competitive exam previous year papers, and entrance exam papers. Download PDFs, chapter-wise notes, solved JEE, NEET, AIIMS, SSC, Bank exams for free.">
-    <meta name="keywords" content="Class 6-12 notes, competitive exams, entrance exams, previous year papers, JEE, NEET, AIIMS, SSC, Bank exams, PDFs, ExamGuru">
-    <meta name="robots" content="index, follow">
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="ExamGuru provides Class 6-12 notes, competitive exam previous year papers, and entrance exam papers. Download PDFs, chapter-wise notes, solved JEE, NEET, AIIMS, SSC, Bank exams for free.">
+  <meta name="keywords" content="Class 6-12 notes, competitive exams, entrance exams, previous year papers, JEE, NEET, AIIMS, SSC, Bank exams, PDFs, ExamGuru">
+  <meta name="robots" content="index, follow">
 
-    <!-- Tailwind & Google Fonts -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <!-- Tailwind & Google Fonts -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="css/style.css">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body class="bg-gray-50 text-gray-800">
 
-    <!-- NAVBAR -->
-    <nav class="flex justify-between items-center px-6 py-4 bg-blue-600 text-white sticky top-0 z-50">
-        <a href="index.html" class="text-2xl font-bold">ExamGuru</a>
-        <ul class="hidden md:flex space-x-6">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="classes.html">6-12 Notes</a></li>
-            <li><a href="competitive.html">Competitive Exams</a></li>
-            <li><a href="entrance.html">Entrance Papers</a></li>
-            <li><a href="about.html">About</a></li>
-        </ul>
-    </nav>
+  <!-- NAVBAR -->
+  <nav class="flex justify-between items-center px-6 py-4 bg-blue-600 text-white sticky top-0 z-50">
+    <a href="index.html" class="text-2xl font-bold">ExamGuru</a>
+    <ul class="hidden md:flex space-x-6">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="classes.html">6-12 Notes</a></li>
+      <li><a href="competitive.html">Competitive Exams</a></li>
+      <li><a href="entrance.html">Entrance Papers</a></li>
+      <li><a href="about.html">About</a></li>
+    </ul>
+  </nav>
 
-    <!-- HERO SECTION -->
-    <section class="hero-bg">
-        <h1>All Class Notes & Exam Papers in One Place</h1>
-        <p>Prepare for Class 6-12, Competitive Exams, and Entrance Exams with free downloadable PDFs</p>
-        <a href="#search">Search Notes & Papers</a>
-    </section>
+  <!-- HERO SECTION -->
+  <section class="hero-bg">
+    <h1>All Class Notes & Exam Papers in One Place</h1>
+    <p>Prepare for Class 6-12, Competitive Exams, and Entrance Exams with free downloadable PDFs</p>
+    <a href="#search">Search Notes & Papers</a>
+  </section>
 
-    <!-- SEARCH SECTION -->
-    <section id="search" class="py-12 bg-gray-100 text-center">
-        <h2 class="text-3xl font-bold mb-6">Search Notes & Previous Year Papers</h2>
-        <input type="text" placeholder="Type class, subject, exam, or year..." class="w-full md:w-2/3 p-4 rounded-lg shadow-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-600">
-    </section>
+  <!-- SEARCH SECTION -->
+  <section id="search" class="py-12 bg-gray-100 text-center">
+    <h2 class="text-3xl font-bold mb-6">Search Notes & Previous Year Papers</h2>
+    <input type="text" placeholder="Type class, subject, exam, or year..." class="w-full md:w-2/3 p-4 rounded-lg shadow-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-600">
+  </section>
 
-    <!-- CLASS 6-12 NOTES SECTION -->
-    <section class="py-16 bg-white">
-        <div class="max-w-6xl mx-auto px-4 text-center">
-            <h2 class="text-4xl font-bold mb-8">Class 6-12 Notes</h2>
-            <p class="mb-12 text-gray-600">All subjects notes from Class 6 to Class 12. Download chapter-wise PDFs and study materials for free.</p>
-            <div class="featured-section">
-                <div class="card">
-                    <h3>Class 6 Maths</h3>
-                    <p>Numbers, Fractions, Geometry - Chapter-wise PDFs</p>
-                    <a href="classes.html">Explore Notes →</a>
-                </div>
-                <div class="card">
-                    <h3>Class 10 Science</h3>
-                    <p>Physics, Chemistry, Biology - Download PDFs</p>
-                    <a href="classes.html">Explore Notes →</a>
-                </div>
-                <div class="card">
-                    <h3>Class 12 Physics</h3>
-                    <p>Electrodynamics, Mechanics, Modern Physics Notes</p>
-                    <a href="classes.html">Explore Notes →</a>
-                </div>
-            </div>
+  <!-- CLASS 6-12 NOTES SECTION -->
+  <section class="py-16 bg-white">
+    <div class="max-w-6xl mx-auto px-4 text-center">
+      <h2 class="text-4xl font-bold mb-8 cursor-pointer" onclick="toggleSection('classNotes')">Class 6-12 Notes</h2>
+      <div id="classNotes" class="hidden text-left mt-6">
+        <!-- Class 6 -->
+        <div class="accordion">
+          <h3 class="cursor-pointer font-semibold mb-1" onclick="toggleSection('class6')">Class 6</h3>
+          <div id="class6" class="hidden pl-6 mb-4">
+            <a href="classes/class6/math.html">Math</a><br>
+            <a href="classes/class6/science.html">Science</a><br>
+            <a href="classes/class6/english.html">English</a>
+          </div>
         </div>
-    </section>
-
-    <!-- COMPETITIVE EXAM SECTION -->
-    <section class="py-16 bg-gray-50">
-        <div class="max-w-6xl mx-auto px-4 text-center">
-            <h2 class="text-4xl font-bold mb-8">Competitive Exam Papers</h2>
-            <p class="mb-12 text-gray-600">JEE, NEET, Olympiads, and other competitive exams. Last 10 years solved papers for better preparation.</p>
-            <div class="featured-section">
-                <div class="card">
-                    <h3>JEE Main</h3>
-                    <p>Last 10 years solved papers in Physics, Chemistry, Maths</p>
-                    <a href="competitive.html">Explore Competitive Exams →</a>
-                </div>
-                <div class="card">
-                    <h3>NEET</h3>
-                    <p>Previous year Biology, Chemistry, Physics papers with solutions</p>
-                    <a href="competitive.html">Explore Competitive Exams →</a>
-                </div>
-                <div class="card">
-                    <h3>Olympiads</h3>
-                    <p>Math, Science Olympiad solved papers for Class 6-12</p>
-                    <a href="competitive.html">Explore Competitive Exams →</a>
-                </div>
-            </div>
+        <!-- Class 7 -->
+        <div class="accordion">
+          <h3 class="cursor-pointer font-semibold mb-1" onclick="toggleSection('class7')">Class 7</h3>
+          <div id="class7" class="hidden pl-6 mb-4">
+            <a href="classes/class7/math.html">Math</a><br>
+            <a href="classes/class7/science.html">Science</a><br>
+            <a href="classes/class7/english.html">English</a>
+          </div>
         </div>
-    </section>
+        <!-- Repeat Classes 8-12 similarly -->
+      </div>
+    </div>
+  </section>
 
-    <!-- ENTRANCE EXAM SECTION -->
-    <section class="py-16 bg-white">
-        <div class="max-w-6xl mx-auto px-4 text-center">
-            <h2 class="text-4xl font-bold mb-8">Entrance Exam Papers</h2>
-            <p class="mb-12 text-gray-600">AIIMS, SSC, Bank Exams, and other entrance exams. Download last 10 years solved papers.</p>
-            <div class="featured-section">
-                <div class="card">
-                    <h3>AIIMS</h3>
-                    <p>Previous 10 years solved papers for medical entrance</p>
-                    <a href="entrance.html">Explore Entrance Papers →</a>
-                </div>
-                <div class="card">
-                    <h3>SSC CGL</h3>
-                    <p>Last 10 years solved question papers for SSC exams</p>
-                    <a href="entrance.html">Explore Entrance Papers →</a>
-                </div>
-                <div class="card">
-                    <h3>Bank Exams</h3>
-                    <p>PO, Clerk previous year papers and practice PDFs</p>
-                    <a href="entrance.html">Explore Entrance Papers →</a>
-                </div>
-            </div>
+  <!-- COMPETITIVE EXAM SECTION -->
+  <section class="py-16 bg-gray-50">
+    <div class="max-w-6xl mx-auto px-4 text-center">
+      <h2 class="text-4xl font-bold mb-8 cursor-pointer" onclick="toggleSection('competitive')">Competitive Exam Papers</h2>
+      <div id="competitive" class="hidden text-left mt-6">
+        <!-- Example: JEE -->
+        <div class="accordion">
+          <h3 class="cursor-pointer font-semibold mb-1" onclick="toggleSection('jee')">JEE Main</h3>
+          <div id="jee" class="hidden pl-6 mb-4">
+            <a href="competitive/jee/2025.pdf" download>2025</a><br>
+            <a href="competitive/jee/2024.pdf" download>2024</a><br>
+            <a href="competitive/jee/2023.pdf" download>2023</a>
+          </div>
         </div>
-    </section>
-
-    <!-- TAGS SECTION -->
-    <section class="py-12 bg-gray-50">
-        <div class="tags">
-            <span>Class 6 Maths</span>
-            <span>Class 10 Science</span>
-            <span>JEE Main Papers</span>
-            <span>NEET Previous Papers</span>
-            <span>AIIMS Entrance</span>
-            <span>SSC Papers</span>
-            <span>Bank Exam PDFs</span>
+        <!-- NEET -->
+        <div class="accordion">
+          <h3 class="cursor-pointer font-semibold mb-1" onclick="toggleSection('neet')">NEET</h3>
+          <div id="neet" class="hidden pl-6 mb-4">
+            <a href="competitive/neet/2025.pdf" download>2025</a><br>
+            <a href="competitive/neet/2024.pdf" download>2024</a>
+          </div>
         </div>
-    </section>
+      </div>
+    </div>
+  </section>
 
-    <!-- FOOTER -->
-    <footer class="bg-blue-600 text-white py-8 text-center">
-        <p>© 2025 ExamGuru. All rights reserved.</p>
-        <p>
-            <a href="index.html">Home</a> | 
-            <a href="classes.html">6-12 Notes</a> | 
-            <a href="competitive.html">Competitive Exams</a> | 
-            <a href="entrance.html">Entrance Papers</a> | 
-            <a href="about.html">About</a>
-        </p>
-        <p class="text-sm">Download free PDFs, previous year papers, and study materials for Class 6-12 and all major competitive exams.</p>
-    </footer>
+  <!-- ENTRANCE EXAM SECTION -->
+  <section class="py-16 bg-white">
+    <div class="max-w-6xl mx-auto px-4 text-center">
+      <h2 class="text-4xl font-bold mb-8 cursor-pointer" onclick="toggleSection('entrance')">Entrance Exam Papers</h2>
+      <div id="entrance" class="hidden text-left mt-6">
+        <!-- AIIMS -->
+        <div class="accordion">
+          <h3 class="cursor-pointer font-semibold mb-1" onclick="toggleSection('aiims')">AIIMS</h3>
+          <div id="aiims" class="hidden pl-6 mb-4">
+            <a href="entrance/aiims/2025.pdf" download>2025</a><br>
+            <a href="entrance/aiims/2024.pdf" download>2024</a>
+          </div>
+        </div>
+        <!-- SSC -->
+        <div class="accordion">
+          <h3 class="cursor-pointer font-semibold mb-1" onclick="toggleSection('ssc')">SSC CGL</h3>
+          <div id="ssc" class="hidden pl-6 mb-4">
+            <a href="entrance/ssc/2025.pdf" download>2025</a><br>
+            <a href="entrance/ssc/2024.pdf" download>2024</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TAGS SECTION -->
+  <section class="py-12 bg-gray-50">
+    <div class="tags">
+      <span>Class 6 Maths</span>
+      <span>Class 10 Science</span>
+      <span>JEE Main Papers</span>
+      <span>NEET Previous Papers</span>
+      <span>AIIMS Entrance</span>
+      <span>SSC Papers</span>
+      <span>Bank Exam PDFs</span>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-blue-600 text-white py-8 text-center">
+    <p>© 2025 ExamGuru. All rights reserved.</p>
+    <p>
+      <a href="index.html">Home</a> | 
+      <a href="classes.html">6-12 Notes</a> | 
+      <a href="competitive.html">Competitive Exams</a> | 
+      <a href="entrance.html">Entrance Papers</a> | 
+      <a href="about.html">About</a>
+    </p>
+    <p class="text-sm">Download free PDFs, previous year papers, and study materials for Class 6-12 and all major competitive exams.</p>
+  </footer>
+
+  <!-- JS for collapsible sections -->
+  <script>
+    function toggleSection(id){
+      const el = document.getElementById(id);
+      if(el.classList.contains('hidden')){
+        el.classList.remove('hidden');
+      } else {
+        el.classList.add('hidden');
+      }
+    }
+  </script>
 
 </body>
 </html>
