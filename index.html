@@ -1,134 +1,93 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <!-- SEO Meta Tags -->
-    <meta name="description" content="Download and access all Class 6-12 notes, competitive exam papers, and previous year entrance exam papers. Prepare for JEE, NEET, Olympiads, AIIMS, SSC, Bank Exams, and more with comprehensive study materials.">
-    <meta name="keywords" content="Class 6 notes, Class 7 notes, Class 8 notes, Class 9 notes, Class 10 notes, Class 11 notes, Class 12 notes, Competitive Exam Papers, Previous Year Papers, JEE, NEET, Olympiads, AIIMS, SSC, Bank Exam, Entrance Exam, Study Material, Free Notes, Download PDF">
-    <meta name="author" content="ExamGuru">
-    <meta name="robots" content="index, follow">
-    
-    <!-- Open Graph for social sharing -->
-    <meta property="og:title" content="ExamGuru - Class 6-12 Notes & Exam Papers">
-    <meta property="og:description" content="Download Class 6-12 notes, competitive exams papers, and entrance previous year papers. All subjects covered. Free PDFs available.">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://www.yoursite.com">
-    <meta property="og:image" content="https://www.yoursite.com/assets/og-image.png">
-
     <title>ExamGuru - Class 6-12 Notes & Exam Papers</title>
 
-    <!-- Favicon -->
-    <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="ExamGuru: Class 6-12 notes, competitive & entrance exam previous papers. Free PDFs, chapter-wise notes, solved papers for JEE, NEET, Olympiads, AIIMS, SSC, Bank Exams.">
+    <meta name="keywords" content="Class 6-12 notes, competitive exams, entrance exams, JEE, NEET, AIIMS, SSC, Bank Exams, PDFs, previous year papers, ExamGuru">
+    <meta name="robots" content="index, follow">
 
-    <!-- TailwindCSS CDN for premium styling -->
+    <!-- Tailwind & Google Fonts -->
     <script src="https://cdn.tailwindcss.com"></script>
-
-    <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 
     <!-- Custom CSS -->
-    <style>
-        body { font-family: 'Roboto', sans-serif; }
-        .hero-bg {
-            background: url('assets/hero-bg.jpg') center/cover no-repeat;
-        }
-    </style>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body class="bg-gray-50 text-gray-800">
 
     <!-- Navbar -->
-    <nav class="bg-blue-600 text-white p-4 shadow-md sticky top-0 z-50">
-        <div class="container mx-auto flex justify-between items-center">
-            <a href="index.html" class="text-2xl font-bold">ExamGuru</a>
-            <ul class="flex space-x-6">
-                <li><a href="index.html" class="hover:text-gray-200">Home</a></li>
-                <li><a href="classes.html" class="hover:text-gray-200">6-12 Notes</a></li>
-                <li><a href="competitive.html" class="hover:text-gray-200">Competitive Exams</a></li>
-                <li><a href="entrance.html" class="hover:text-gray-200">Entrance Papers</a></li>
-                <li><a href="about.html" class="hover:text-gray-200">About</a></li>
-            </ul>
-        </div>
+    <nav class="flex justify-between items-center px-6 py-4">
+        <a href="index.html" class="text-2xl font-bold text-white">ExamGuru</a>
+        <ul class="hidden md:flex space-x-6">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="classes.html">6-12 Notes</a></li>
+            <li><a href="competitive.html">Competitive Exams</a></li>
+            <li><a href="entrance.html">Entrance Papers</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
     </nav>
 
     <!-- Hero Section -->
-    <section class="hero-bg h-[80vh] flex flex-col justify-center items-center text-center text-white">
-        <h1 class="text-4xl md:text-5xl font-bold mb-4 drop-shadow-lg">All Class Notes & Exam Papers in One Place</h1>
-        <p class="text-lg md:text-xl mb-6 drop-shadow-md">Prepare for Class 6-12, Competitive Exams, and Entrance Exams with free downloadable PDFs</p>
-        <a href="#search" class="bg-yellow-400 text-blue-800 font-semibold px-6 py-3 rounded-lg hover:bg-yellow-500 transition">Search Notes & Papers</a>
+    <section class="hero-bg">
+        <h1>All Class Notes & Exam Papers in One Place</h1>
+        <p>Prepare for Class 6-12, Competitive Exams, and Entrance Exams with free downloadable PDFs</p>
+        <a href="#search">Search Notes & Papers</a>
     </section>
 
     <!-- Search Section -->
-    <section id="search" class="py-12 bg-gray-100">
-        <div class="container mx-auto text-center">
-            <h2 class="text-3xl font-bold mb-6">Search Notes & Previous Year Papers</h2>
-            <input type="text" placeholder="Type class, subject, exam or year..." class="w-full md:w-2/3 p-4 rounded-lg shadow-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-600">
-        </div>
+    <section id="search" class="py-12 bg-gray-100 text-center">
+        <h2 class="text-3xl font-bold mb-6">Search Notes & Previous Year Papers</h2>
+        <input type="text" placeholder="Type class, subject, exam or year...">
     </section>
 
     <!-- Featured Sections -->
-    <section class="py-16 container mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
-        <!-- 6-12 Notes -->
-        <div class="bg-white p-6 rounded-xl shadow hover:shadow-xl transition">
-            <h3 class="text-2xl font-bold mb-4">Class 6-12 Notes</h3>
-            <p class="mb-4">All subjects notes from Class 6 to Class 12. Download PDFs chapter-wise.</p>
-            <a href="classes.html" class="text-blue-600 font-semibold hover:underline">Explore Notes &rarr;</a>
+    <section class="featured-section">
+        <div class="card">
+            <h3>Class 6-12 Notes</h3>
+            <p>All subjects notes from Class 6 to Class 12. Download PDFs chapter-wise.</p>
+            <a href="classes.html">Explore Notes →</a>
         </div>
-        <!-- Competitive Exams -->
-        <div class="bg-white p-6 rounded-xl shadow hover:shadow-xl transition">
-            <h3 class="text-2xl font-bold mb-4">Competitive Exam Papers</h3>
-            <p class="mb-4">JEE, NEET, Olympiads, and other competitive exams. Get last 10 years papers with solutions.</p>
-            <a href="competitive.html" class="text-blue-600 font-semibold hover:underline">Explore Competitive Exams &rarr;</a>
+        <div class="card">
+            <h3>Competitive Exam Papers</h3>
+            <p>JEE, NEET, Olympiads, and other competitive exams. Get last 10 years papers with solutions.</p>
+            <a href="competitive.html">Explore Competitive Exams →</a>
         </div>
-        <!-- Entrance Papers -->
-        <div class="bg-white p-6 rounded-xl shadow hover:shadow-xl transition">
-            <h3 class="text-2xl font-bold mb-4">Entrance Previous Year Papers</h3>
-            <p class="mb-4">AIIMS, IIT, SSC, Bank Exams, and other entrance exams. Download 10 years previous papers.</p>
-            <a href="entrance.html" class="text-blue-600 font-semibold hover:underline">Explore Entrance Papers &rarr;</a>
+        <div class="card">
+            <h3>Entrance Previous Year Papers</h3>
+            <p>AIIMS, IIT, SSC, Bank Exams, and other entrance exams. Download 10 years previous papers.</p>
+            <a href="entrance.html">Explore Entrance Papers →</a>
         </div>
     </section>
 
-    <!-- Popular Content / Tags -->
+    <!-- Tags -->
     <section class="py-12 bg-gray-50">
-        <div class="container mx-auto text-center">
-            <h2 class="text-3xl font-bold mb-6">Popular Tags & Topics</h2>
-            <div class="flex flex-wrap justify-center gap-3">
-                <span class="bg-blue-100 text-blue-800 px-4 py-2 rounded-full text-sm hover:bg-blue-200 cursor-pointer">Class 6 Maths</span>
-                <span class="bg-blue-100 text-blue-800 px-4 py-2 rounded-full text-sm hover:bg-blue-200 cursor-pointer">Class 10 Science</span>
-                <span class="bg-blue-100 text-blue-800 px-4 py-2 rounded-full text-sm hover:bg-blue-200 cursor-pointer">JEE Main Papers</span>
-                <span class="bg-blue-100 text-blue-800 px-4 py-2 rounded-full text-sm hover:bg-blue-200 cursor-pointer">NEET Previous Papers</span>
-                <span class="bg-blue-100 text-blue-800 px-4 py-2 rounded-full text-sm hover:bg-blue-200 cursor-pointer">AIIMS Entrance</span>
-                <span class="bg-blue-100 text-blue-800 px-4 py-2 rounded-full text-sm hover:bg-blue-200 cursor-pointer">SSC Previous Papers</span>
-                <span class="bg-blue-100 text-blue-800 px-4 py-2 rounded-full text-sm hover:bg-blue-200 cursor-pointer">Bank Exam Papers</span>
-            </div>
+        <div class="tags">
+            <span>Class 6 Maths</span>
+            <span>Class 10 Science</span>
+            <span>JEE Main Papers</span>
+            <span>NEET Previous Papers</span>
+            <span>AIIMS Entrance</span>
+            <span>SSC Previous Papers</span>
+            <span>Bank Exam Papers</span>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="bg-blue-600 text-white py-8 mt-12">
-        <div class="container mx-auto text-center space-y-4">
-            <p>© 2025 ExamGuru. All rights reserved.</p>
-            <p>
-                <a href="index.html" class="hover:underline">Home</a> | 
-                <a href="classes.html" class="hover:underline">6-12 Notes</a> | 
-                <a href="competitive.html" class="hover:underline">Competitive Exams</a> | 
-                <a href="entrance.html" class="hover:underline">Entrance Papers</a> | 
-                <a href="about.html" class="hover:underline">About</a>
-            </p>
-            <p class="text-sm">Download free PDFs, previous year papers, and study materials for Class 6-12 and all major competitive exams.</p>
-        </div>
+    <footer>
+        <p>© 2025 ExamGuru. All rights reserved.</p>
+        <p>
+            <a href="index.html">Home</a> | 
+            <a href="classes.html">6-12 Notes</a> | 
+            <a href="competitive.html">Competitive Exams</a> | 
+            <a href="entrance.html">Entrance Papers</a> | 
+            <a href="about.html">About</a>
+        </p>
+        <p class="text-sm">Download free PDFs, previous year papers, and study materials for Class 6-12 and all major competitive exams.</p>
     </footer>
 
-    <!-- Optional Scripts -->
-    <script>
-        // Search functionality (frontend example)
-        const searchInput = document.querySelector('input[type="text"]');
-        searchInput.addEventListener('input', (e) => {
-            console.log("Searching for:", e.target.value);
-            // Implement search/filter logic here
-        });
-    </script>
 </body>
 </html>
