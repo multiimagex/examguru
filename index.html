@@ -3,281 +3,155 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ExamGuru - Class 6-12 Notes & Exam Papers</title>
-
-  <!-- SEO Meta Tags -->
-  <meta name="description" content="ExamGuru provides Class 6-12 notes, competitive exam previous year papers, and entrance exam papers. Download PDFs, chapter-wise notes, solved JEE, NEET, AIIMS, SSC, Bank exams for free.">
-  <meta name="keywords" content="Class 6-12 notes, competitive exams, entrance exams, previous year papers, JEE, NEET, AIIMS, SSC, Bank exams, UPSC, state entrance exams, PDFs, ExamGuru">
+  <title>ExamGuru - Notes & Previous Year Papers (6th–12th, Competitive, Entrance)</title>
+  <meta name="description" content="ExamGuru - Get free notes for Class 6–12, competitive exam solved question papers (JEE, NEET, UPSC, SSC, Banking, AIIMS, Olympiad) and previous 10 years entrance exam papers (CUET, state-level engineering & medical exams). Download year-wise PDFs instantly.">
+  <meta name="keywords" content="ExamGuru, class 6 notes, class 7 notes, class 8 notes, class 9 notes, class 10 notes, class 11 notes, class 12 notes, JEE previous papers, NEET previous papers, UPSC papers, SSC papers, Banking papers, CUET solved papers, AIIMS question papers, State entrance exams, Engineering papers, Medical papers, Previous year question papers, Free study notes, Exam preparation">
+  <meta name="author" content="ExamGuru Team">
   <meta name="robots" content="index, follow">
-
-  <!-- Tailwind & Google Fonts -->
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-
-  <!-- Custom CSS -->
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="style.css">
 </head>
-<body class="bg-gray-50 text-gray-800">
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="container">
+      <h1 class="logo">ExamGuru</h1>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#notes">Class 6–12 Notes</a></li>
+          <li><a href="#competitive">Competitive Exams</a></li>
+          <li><a href="#entrance">Entrance Exams</a></li>
+          <li><a href="#about">About</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-  <!-- NAVBAR -->
-  <nav class="flex justify-between items-center px-6 py-4 bg-blue-600 text-white sticky top-0 z-50">
-    <a href="index.html" class="text-2xl font-bold">ExamGuru</a>
-    <ul class="hidden md:flex space-x-6">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="classes.html">6-12 Notes</a></li>
-      <li><a href="competitive.html">Competitive Exams</a></li>
-      <li><a href="entrance.html">Entrance Papers</a></li>
-      <li><a href="about.html">About</a></li>
-    </ul>
-  </nav>
-
-  <!-- HERO SECTION -->
-  <section class="hero-bg">
-    <h1>All Class Notes & Exam Papers in One Place</h1>
-    <p>Prepare for Class 6-12, Competitive Exams, and Entrance Exams with free downloadable PDFs</p>
-    <a href="#search">Search Notes & Papers</a>
-  </section>
-
-  <!-- SEARCH SECTION -->
-  <section id="search" class="py-12 bg-gray-100 text-center">
-    <h2 class="text-3xl font-bold mb-6">Search Notes & Previous Year Papers</h2>
-    <input type="text" placeholder="Type class, subject, exam, or year..." class="w-full md:w-2/3 p-4 rounded-lg shadow-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-600">
-  </section>
-
-  <!-- CLASS 6-12 NOTES SECTION -->
-  <section class="py-16 bg-white">
-    <div class="max-w-6xl mx-auto px-4 text-center">
-      <h2 class="text-4xl font-bold mb-8 cursor-pointer" onclick="toggleSection('classNotes')">Class 6-12 Notes</h2>
-      <div id="classNotes" class="hidden text-left mt-6">
-        <!-- Classes 6 to 12 -->
-        <div class="accordion"><h3 class="cursor-pointer font-semibold mb-1" onclick="toggleSection('class6')">Class 6</h3>
-          <div id="class6" class="hidden pl-6 mb-4">
-            <a href="classes/class6/math.html">Math</a><br>
-            <a href="classes/class6/science.html">Science</a><br>
-            <a href="classes/class6/english.html">English</a>
-          </div>
-        </div>
-        <div class="accordion"><h3 class="cursor-pointer font-semibold mb-1" onclick="toggleSection('class7')">Class 7</h3>
-          <div id="class7" class="hidden pl-6 mb-4">
-            <a href="classes/class7/math.html">Math</a><br>
-            <a href="classes/class7/science.html">Science</a><br>
-            <a href="classes/class7/english.html">English</a>
-          </div>
-        </div>
-        <div class="accordion"><h3 class="cursor-pointer font-semibold mb-1" onclick="toggleSection('class8')">Class 8</h3>
-          <div id="class8" class="hidden pl-6 mb-4">
-            <a href="classes/class8/math.html">Math</a><br>
-            <a href="classes/class8/science.html">Science</a><br>
-            <a href="classes/class8/english.html">English</a>
-          </div>
-        </div>
-        <div class="accordion"><h3 class="cursor-pointer font-semibold mb-1" onclick="toggleSection('class9')">Class 9</h3>
-          <div id="class9" class="hidden pl-6 mb-4">
-            <a href="classes/class9/math.html">Math</a><br>
-            <a href="classes/class9/science.html">Science</a><br>
-            <a href="classes/class9/english.html">English</a>
-          </div>
-        </div>
-        <div class="accordion"><h3 class="cursor-pointer font-semibold mb-1" onclick="toggleSection('class10')">Class 10</h3>
-          <div id="class10" class="hidden pl-6 mb-4">
-            <a href="classes/class10/math.html">Math</a><br>
-            <a href="classes/class10/science.html">Science</a><br>
-            <a href="classes/class10/english.html">English</a>
-          </div>
-        </div>
-        <div class="accordion"><h3 class="cursor-pointer font-semibold mb-1" onclick="toggleSection('class11')">Class 11</h3>
-          <div id="class11" class="hidden pl-6 mb-4">
-            <a href="classes/class11/math.html">Math</a><br>
-            <a href="classes/class11/physics.html">Physics</a><br>
-            <a href="classes/class11/chemistry.html">Chemistry</a><br>
-            <a href="classes/class11/biology.html">Biology</a>
-          </div>
-        </div>
-        <div class="accordion"><h3 class="cursor-pointer font-semibold mb-1" onclick="toggleSection('class12')">Class 12</h3>
-          <div id="class12" class="hidden pl-6 mb-4">
-            <a href="classes/class12/math.html">Math</a><br>
-            <a href="classes/class12/physics.html">Physics</a><br>
-            <a href="classes/class12/chemistry.html">Chemistry</a><br>
-            <a href="classes/class12/biology.html">Biology</a>
-          </div>
-        </div>
-      </div>
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <h2>Welcome to ExamGuru</h2>
+      <p>Your one-stop solution for Class Notes, Competitive & Entrance Exam Previous Year Papers</p>
+      <form class="search-bar">
+        <input type="text" placeholder="Search notes or exam papers..." aria-label="Search">
+        <button type="submit">Search</button>
+      </form>
     </div>
   </section>
 
-  <!-- COMPETITIVE EXAM SECTION -->
-  <section class="py-16 bg-gray-50">
-    <div class="max-w-6xl mx-auto px-4 text-center">
-      <h2 class="text-4xl font-bold mb-8 cursor-pointer" onclick="toggleSection('competitive')">Competitive Exam Papers</h2>
-      <div id="competitive" class="hidden text-left mt-6">
-        <!-- List of all Competitive Exams -->
-        <div class="accordion"><h3 class="cursor-pointer font-semibold mb-1" onclick="toggleSection('jee')">JEE Main</h3>
-          <div id="jee" class="hidden pl-6 mb-4">
-            <a href="competitive/jee/2025.pdf" download>2025</a><br>
-            <a href="competitive/jee/2024.pdf" download>2024</a><br>
-            <a href="competitive/jee/2023.pdf" download>2023</a>
-          </div>
-        </div>
-        <div class="accordion"><h3 class="cursor-pointer font-semibold mb-1" onclick="toggleSection('neet')">NEET</h3>
-          <div id="neet" class="hidden pl-6 mb-4">
-            <a href="competitive/neet/2025.pdf" download>2025</a><br>
-            <a href="competitive/neet/2024.pdf" download>2024</a>
-          </div>
-        </div>
-        <div class="accordion"><h3 class="cursor-pointer font-semibold mb-1" onclick="toggleSection('ssc')">SSC CGL</h3>
-          <div id="ssc" class="hidden pl-6 mb-4">
-            <a href="competitive/ssc/2025.pdf" download>2025</a><br>
-            <a href="competitive/ssc/2024.pdf" download>2024</a>
-          </div>
-        </div>
-        <div class="accordion"><h3 class="cursor-pointer font-semibold mb-1" onclick="toggleSection('bank')">Bank Exams</h3>
-          <div id="bank" class="hidden pl-6 mb-4">
-            <a href="competitive/bank/2025.pdf" download>2025</a><br>
-            <a href="competitive/bank/2024.pdf" download>2024</a>
-          </div>
-        </div>
-        <div class="accordion"><h3 class="cursor-pointer font-semibold mb-1" onclick="toggleSection('upsc')">UPSC</h3>
-          <div id="upsc" class="hidden pl-6 mb-4">
-            <a href="competitive/upsc/2025.pdf" download>2025</a><br>
-            <a href="competitive/upsc/2024.pdf" download>2024</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
- <!-- ENTRANCE EXAM SECTION -->
-<section class="py-16 bg-white">
-  <div class="max-w-6xl mx-auto px-4 text-center">
-    <h2 class="text-4xl font-bold mb-8 cursor-pointer" onclick="toggleSection('entrance')">Entrance Exam Papers</h2>
-    <div id="entrance" class="hidden text-left mt-6">
-      
-      <!-- National-Level Exams -->
+  <!-- Class Notes Section -->
+  <section id="notes" class="section">
+    <div class="container">
+      <h2>Class 6–12 Notes</h2>
       <div class="accordion">
-        <h3 class="cursor-pointer font-semibold mb-1" onclick="toggleSection('aiims')">AIIMS</h3>
-        <div id="aiims" class="hidden pl-6 mb-4">
-          <a href="entrance/aiims/2025.pdf" download>2025</a><br>
-          <a href="entrance/aiims/2024.pdf" download>2024</a><br>
-          <a href="entrance/aiims/2023.pdf" download>2023</a>
-        </div>
-      </div>
-      <div class="accordion">
-        <h3 class="cursor-pointer font-semibold mb-1" onclick="toggleSection('cuet')">CUET (Central Universities Entrance Test)</h3>
-        <div id="cuet" class="hidden pl-6 mb-4">
-          <a href="entrance/cuet/2025.pdf" download>2025</a><br>
-          <a href="entrance/cuet/2024.pdf" download>2024</a><br>
-          <a href="entrance/cuet/2023.pdf" download>2023</a><br>
-          <a href="entrance/cuet/2022.pdf" download>2022</a><br>
-          <a href="entrance/cuet/2021.pdf" download>2021</a><br>
-          <a href="entrance/cuet/2020.pdf" download>2020</a><br>
-          <a href="entrance/cuet/2019.pdf" download>2019</a><br>
-          <a href="entrance/cuet/2018.pdf" download>2018</a><br>
-          <a href="entrance/cuet/2017.pdf" download>2017</a><br>
-          <a href="entrance/cuet/2016.pdf" download>2016</a>
-        </div>
-      </div>
-
-      <!-- State-Level Exams -->
-      <div class="accordion">
-        <h3 class="cursor-pointer font-semibold mb-1" onclick="toggleSection('stateEntrance')">State-Level Entrance Exams (All States)</h3>
-        <div id="stateEntrance" class="hidden pl-6 mb-4">
-
-          <!-- Maharashtra -->
-          <div class="accordion">
-            <h4 class="cursor-pointer font-medium mb-1" onclick="toggleSection('maharashtra')">Maharashtra PMC</h4>
-            <div id="maharashtra" class="hidden pl-6 mb-2">
-              <a href="entrance/pmc/2025.pdf" download>2025</a><br>
-              <a href="entrance/pmc/2024.pdf" download>2024</a><br>
-              <a href="entrance/pmc/2023.pdf" download>2023</a><br>
-              <a href="entrance/pmc/2022.pdf" download>2022</a><br>
-              <a href="entrance/pmc/2021.pdf" download>2021</a><br>
-              <a href="entrance/pmc/2020.pdf" download>2020</a><br>
-              <a href="entrance/pmc/2019.pdf" download>2019</a><br>
-              <a href="entrance/pmc/2018.pdf" download>2018</a><br>
-              <a href="entrance/pmc/2017.pdf" download>2017</a><br>
-              <a href="entrance/pmc/2016.pdf" download>2016</a>
+        <!-- Loop for Classes 6-12 -->
+        <script>
+          const classes = [6,7,8,9,10,11,12];
+          document.write(classes.map(cls => `
+            <div>
+              <h3 class="cursor-pointer" onclick="toggleSection('class${cls}')">Class ${cls}</h3>
+              <div id="class${cls}" class="hidden pl-6">
+                <a href="notes/class${cls}/maths.pdf" download>Mathematics</a><br>
+                <a href="notes/class${cls}/science.pdf" download>Science</a><br>
+                <a href="notes/class${cls}/english.pdf" download>English</a><br>
+                <a href="notes/class${cls}/social.pdf" download>Social Studies</a>
+              </div>
             </div>
-          </div>
-
-          <!-- Kerala -->
-          <div class="accordion">
-            <h4 class="cursor-pointer font-medium mb-1" onclick="toggleSection('kerala')">Kerala KEAM</h4>
-            <div id="kerala" class="hidden pl-6 mb-2">
-              <a href="entrance/keam/2025.pdf" download>2025</a><br>
-              <a href="entrance/keam/2024.pdf" download>2024</a><br>
-              <a href="entrance/keam/2023.pdf" download>2023</a><br>
-              <a href="entrance/keam/2022.pdf" download>2022</a><br>
-              <a href="entrance/keam/2021.pdf" download>2021</a><br>
-              <a href="entrance/keam/2020.pdf" download>2020</a><br>
-              <a href="entrance/keam/2019.pdf" download>2019</a><br>
-              <a href="entrance/keam/2018.pdf" download>2018</a><br>
-              <a href="entrance/keam/2017.pdf" download>2017</a><br>
-              <a href="entrance/keam/2016.pdf" download>2016</a>
-            </div>
-          </div>
-
-          <!-- Tamil Nadu -->
-          <div class="accordion">
-            <h4 class="cursor-pointer font-medium mb-1" onclick="toggleSection('tamilnadu')">Tamil Nadu TNEA</h4>
-            <div id="tamilnadu" class="hidden pl-6 mb-2">
-              <a href="entrance/tnea/2025.pdf" download>2025</a><br>
-              <a href="entrance/tnea/2024.pdf" download>2024</a><br>
-              <a href="entrance/tnea/2023.pdf" download>2023</a><br>
-              <a href="entrance/tnea/2022.pdf" download>2022</a><br>
-              <a href="entrance/tnea/2021.pdf" download>2021</a><br>
-              <a href="entrance/tnea/2020.pdf" download>2020</a><br>
-              <a href="entrance/tnea/2019.pdf" download>2019</a><br>
-              <a href="entrance/tnea/2018.pdf" download>2018</a><br>
-              <a href="entrance/tnea/2017.pdf" download>2017</a><br>
-              <a href="entrance/tnea/2016.pdf" download>2016</a>
-            </div>
-          </div>
-
-          <!-- Add more states similarly (Delhi CET, UP, Rajasthan, Karnataka, etc.) -->
-          
-        </div>
+          `).join(""));
+        </script>
       </div>
-
-    </div>
-  </div>
-</section>
-  <!-- TAGS SECTION -->
-  <section class="py-12 bg-gray-50">
-    <div class="tags">
-      <span>Class 6 Maths</span>
-      <span>Class 10 Science</span>
-      <span>JEE Main Papers</span>
-      <span>NEET Previous Papers</span>
-      <span>AIIMS Entrance</span>
-      <span>SSC Papers</span>
-      <span>Bank Exam PDFs</span>
     </div>
   </section>
 
-  <!-- FOOTER -->
-  <footer class="bg-blue-600 text-white py-8 text-center">
-    <p>© 2025 ExamGuru. All rights reserved.</p>
-    <p>
-      <a href="index.html">Home</a> | 
-      <a href="classes.html">6-12 Notes</a> | 
-      <a href="competitive.html">Competitive Exams</a> | 
-      <a href="entrance.html">Entrance Papers</a> | 
-      <a href="about.html">About</a>
-    </p>
-    <p class="text-sm">Download free PDFs, previous year papers, and study materials for Class 6-12 and all major competitive exams.</p>
+  <!-- Competitive Exam Papers -->
+  <section id="competitive" class="section">
+    <div class="container">
+      <h2>Competitive Exams - Last 10 Years Papers</h2>
+      <div class="accordion">
+        <!-- Exams -->
+        <script>
+          const compExams = ["JEE", "NEET", "UPSC", "SSC", "Banking", "Olympiad", "AIIMS"];
+          compExams.forEach(exam => {
+            document.write(`
+              <div>
+                <h3 class="cursor-pointer" onclick="toggleSection('${exam}')">${exam}</h3>
+                <div id="${exam}" class="hidden pl-6">
+                  ${Array.from({length:10}, (_,i)=>2025-i).map(y=>`<a href="competitive/${exam.toLowerCase()}/${y}.pdf" download>${y}</a><br>`).join("")}
+                </div>
+              </div>
+            `);
+          });
+        </script>
+      </div>
+    </div>
+  </section>
+
+  <!-- Entrance Exam Papers -->
+  <section id="entrance" class="section">
+    <div class="container">
+      <h2>Entrance Exams - National & State Level (10 Years)</h2>
+      <div class="accordion">
+        <!-- National Exams -->
+        <div>
+          <h3 class="cursor-pointer" onclick="toggleSection('cuet')">CUET</h3>
+          <div id="cuet" class="hidden pl-6">
+            <script>
+              document.write(Array.from({length:10}, (_,i)=>2025-i).map(y=>`<a href="entrance/cuet/${y}.pdf" download>${y}</a><br>`).join(""));
+            </script>
+          </div>
+        </div>
+        <div>
+          <h3 class="cursor-pointer" onclick="toggleSection('aiims')">AIIMS</h3>
+          <div id="aiims" class="hidden pl-6">
+            <script>
+              document.write(Array.from({length:10}, (_,i)=>2025-i).map(y=>`<a href="entrance/aiims/${y}.pdf" download>${y}</a><br>`).join(""));
+            </script>
+          </div>
+        </div>
+
+        <!-- State Exams -->
+        <script>
+          const states = ["Maharashtra CET", "Kerala KEAM", "Tamil Nadu TNEA", "Delhi CET", "UPSEE", "Rajasthan RPET", "Karnataka KCET", "Bihar BCECE", "West Bengal WBJEE", "MP PET"];
+          states.forEach(state => {
+            let id = state.toLowerCase().replace(/\s+/g,'');
+            document.write(`
+              <div>
+                <h3 class="cursor-pointer" onclick="toggleSection('${id}')">${state}</h3>
+                <div id="${id}" class="hidden pl-6">
+                  ${Array.from({length:10}, (_,i)=>2025-i).map(y=>`<a href="entrance/${id}/${y}.pdf" download>${y}</a><br>`).join("")}
+                </div>
+              </div>
+            `);
+          });
+        </script>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="section">
+    <div class="container">
+      <h2>About ExamGuru</h2>
+      <p>ExamGuru provides free access to Class 6–12 notes, solved competitive exam papers, and national/state-level entrance exam question papers from the last 10 years. Download PDF resources and prepare smarter for your academic and competitive success.</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2025 ExamGuru. All Rights Reserved.</p>
+    </div>
   </footer>
 
-  <!-- JS for collapsible sections -->
+  <!-- Script -->
   <script>
-    function toggleSection(id){
+    function toggleSection(id) {
       const el = document.getElementById(id);
-      if(el.classList.contains('hidden')){
+      if (el.classList.contains('hidden')) {
         el.classList.remove('hidden');
       } else {
         el.classList.add('hidden');
       }
     }
   </script>
-
 </body>
 </html>
