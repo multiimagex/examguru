@@ -142,16 +142,53 @@
     </div>
   </footer>
 
-  <!-- Script -->
-  <script>
-    function toggleSection(id) {
-      const el = document.getElementById(id);
-      if (el.classList.contains('hidden')) {
-        el.classList.remove('hidden');
-      } else {
-        el.classList.add('hidden');
-      }
+<!-- Script -->
+<script>
+  // Accordion toggle function
+  function toggleSection(id) {
+    const el = document.getElementById(id);
+    if (el.classList.contains('hidden')) {
+      el.classList.remove('hidden');
+    } else {
+      el.classList.add('hidden');
     }
-  </script>
+  }
+
+  // Search Functionality
+  const searchInput = document.querySelector(".search-bar input");
+  const searchForm = document.querySelector(".search-bar");
+  const links = document.querySelectorAll("a");
+
+  searchForm.addEventListener("submit", function(e) {
+    e.preventDefault();
+    let query = searchInput.value.toLowerCase();
+    let found = false;
+
+    // Reset old highlights
+    links.forEach(link => {
+      link.style.backgroundColor = "";
+      link.style.fontWeight = "";
+    });
+
+    if(query.trim() === "") {
+      alert("Please enter a keyword to search!");
+      return;
+    }
+
+    // Search through all links
+    links.forEach(link => {
+      if(link.textContent.toLowerCase().includes(query)) {
+        link.style.backgroundColor = "#fef3c7";
+        link.style.fontWeight = "bold";
+        link.scrollIntoView({behavior: "smooth", block: "center"});
+        found = true;
+      }
+    });
+
+    if(!found) {
+      alert("No results found for: " + query);
+    }
+  });
+</script>
 </body>
 </html>
